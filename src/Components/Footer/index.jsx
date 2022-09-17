@@ -3,7 +3,6 @@ import {
     Box,
     chakra,
     Container,
-    Link,
     Image,
     Stack,
     Text,
@@ -11,6 +10,7 @@ import {
     VisuallyHidden,
     HStack
 } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 import { FaInstagram, FaYoutube, FaGithub } from "react-icons/fa";
 
 
@@ -57,10 +57,10 @@ const Footer = () => {
                     src={'/thuta.png'}
                 />
                 <Stack direction={'row'} fontWeight="600" spacing={6}>
-                    <Link href={"/"}>Home</Link>
-                    <Link href={"/about"}>About</Link>
-                    <Link href={"/faq"}>Faq</Link>
-                    <Link href={"/help"}>Help</Link>
+                    <Link to={"/"}>Home</Link>
+                    <Link to={"/about"}>About</Link>
+                    <Link to={"/faq"}>Faq</Link>
+                    <Link to={"/help"}>Help</Link>
                 </Stack>
             </Container>
 
