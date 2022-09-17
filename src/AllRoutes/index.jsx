@@ -16,7 +16,7 @@ const AllROutes = () => {
             <NavBar/>
                 <Routes>
                     <Route path="/" element={<Home/>} />
-                    <Route path="/reviews" element={<Reviews/>} />
+                    <Route path="/review" element={<Reviews/>} />
                     <Route path="/about" element={<About/>} />
                     <Route path="/faq" element={<FAQ/>} />
                     <Route path="/help" element={<Help/>} />
