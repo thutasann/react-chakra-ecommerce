@@ -66,6 +66,8 @@ const NavBar = () => {
                                 width="90px"
                                 height="90px"
                                 alt="Thuta Ecom"
+                                loading='lazy'
+                                placeholder='/thuta.png'
                                 style={{
                                     margin: "9px"
                                 }}
