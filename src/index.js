@@ -7,18 +7,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { store } from './Redux/store';
+import { Auth0Provider } from "@auth0/auth0-react";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <BrowserRouter>
-        <ChakraProvider>
-          <App />
-        </ChakraProvider>
-      </BrowserRouter>
-    </Provider>
-  </React.StrictMode>
+  <Auth0Provider
+    domain="dev-am39m9wi.us.auth0.com"
+    clientId="m6ekyNC5bJJeJOTLFRSW0pClQks9wPQn"
+    redirectUri={window.location.origin}
+  >
+    <React.StrictMode>
+      <Provider store={store}>
+        <BrowserRouter>
+          <ChakraProvider>
+            <App />
+          </ChakraProvider>
+        </BrowserRouter>
+      </Provider>
+    </React.StrictMode>
+  </Auth0Provider>
 );
 
 
